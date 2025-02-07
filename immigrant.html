@@ -1,0 +1,131 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <title>Bread Lab</title>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1">
+    <link rel="stylesheet" href="https://www.w3schools.com/w3css/4/w3.css">
+    <link rel="stylesheet" href="drum.css">
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+    <link href="https://fonts.googleapis.com/css2?family=Bebas+Neue&display=swap" rel="stylesheet">
+    <script src="https://kit.fontawesome.com/bffad89913.js" crossorigin="anonymous"></script>
+    <style>
+        body,
+        h1,
+        h2,
+        h3,
+        h5,
+        h6 {
+            font-family: "Bebas Neue", sans-serif;
+            font-weight: 400
+        }
+
+        h4 {
+            font-family: "Bebas Neue", sans-serif;
+            font-weight: 400;
+            font-size: 28px
+        }
+
+        p {
+            font-family: "Bebas Neue", sans-serif;
+            font-weight: 400;
+            font-size: 20px
+        }
+
+        .triangle-right {
+            width: 100px;
+            height: 100px;
+            border-top: 25px solid transparent;
+            border-left: 50px solid #555;
+            border-bottom: 25px solid transparent;
+            z-index: -1;
+        }
+    </style>
+</head>
+
+<body
+    style="min-height:100vh; background: linear-gradient(135deg, white 325px, #ffc107 325px, #ffc107 100%, white 100%)">
+    <!-- Navbar -->
+    <div class="w3-sidebar w3-bar-block w3-animate-right"
+        style="display:none; width:300px; right:0; top:0; font-size:2em;" id="mySidebar">
+        <button class="w3-bar-item w3-button w3-hover-black" onclick="w3_close()">&times;</button>
+        <a href="index.html#" class="w3-bar-item w3-button w3-hover-black">Home</a>
+        <a href="about.html" class="w3-bar-item w3-button w3-hover-black">About Me</a>
+        <a href="smb.html" class="w3-bar-item w3-button w3-hover-black">Small Business</a>
+        <a href="pp.html" class="w3-bar-item w3-button w3-hover-black">Personal Productivity</a>
+        <a href="immigrant.html" class="w3-bar-item w3-button w3-hover-black">Immigrant Support</a>
+        <a href="contact.html" class="w3-bar-item w3-button w3-hover-black">Let's Talk</a>
+    </div>
+
+    <div class="w3-right"><button class="w3-button w3-xxlarge w3-hover-black" onclick="w3_open()">☰</button></div>
+
+    <div style="position: relative; top: 3%; left: 3%; width: 50px; padding-top:20px;">
+        <h1 style="font-weight: bolder; font-size: 10em; line-height: 80%; width:50px">BREAD LAB</h1>
+    </div>
+
+    <div class="w3-center" style="padding-top:50px">
+        <h1 class="w3-center w3-margin w3-container w3-jumbo" style="line-height:80%;">Immigrant Support</h1>
+    </div>
+
+    <!-- First Grid -->
+    <div class="w3-row-padding w3-center w3-margin">
+
+        <div class="w3-third" style="min-width: 360px">
+            <div class="w3-container w3-padding w3-panel w3-hover-black" style="min-height: 500px;">
+                <h2 style="float: left; font-size:155px; line-height:80%; margin-right:-30px; margin-bottom:0px; color:white;">1.</h2>
+                <h2 style="font-size:55px; text-align:left; line-height:80%; min-width: 340px;">Get<br>Resources</h2>
+                <div class="w3-content w3-left-align w3-large" style="margin-top:40px;">
+                    <p>One of the best parts of living in the US is the nonprofits and resources that exist to support people who are looking to improve themselves.<br><br>Our first step together will focus on helping you connect with and apply for the training and support you need to move your career forward.</p>
+                </div>
+            </div>
+        </div>
+
+        <div class="w3-third" style="min-width: 360px">
+            <div class="w3-container w3-padding w3-panel w3-hover-black" style="min-height: 500px;">
+                <h2 style="float: left; font-size:155px; line-height:80%; margin-right:-30px; margin-bottom:0px; color:white;">2.</h2>
+                <h2 style="font-size:55px; text-align:left; line-height:80%; min-width: 340px;">Train<br>Up</h2>
+                <div class="w3-content w3-left-align w3-large" style="margin-top:40px;">
+                    <p>Following your first steps of training, we'll partner up to implement and practice what you've learned. Together we'll reflect on what works and what doesn't and make adjustments along the way.  By implementing sustainable practices, routines and technology we'll create a new way of managing your career goals.<br><br>Phase two will be about practicing, assessing and make improvements to both our approach and ability to commit to your career goals. </p>
+                </div>
+            </div>
+        </div>
+
+        <div class="w3-third" style="min-width: 360px">
+            <div class="w3-container w3-padding w3-panel w3-hover-black" style="min-height: 500px;">
+                <h2 style="float: left; font-size:155px; line-height:80%; margin-right:-30px; margin-bottom:0px; color:white;">3.</h2>
+                <h2 style="font-size:55px; text-align:left; line-height:80%; min-width: 340px;">Reach<br>Higher</h2>
+                <div class="w3-content w3-left-align w3-large" style="margin-top:40px;">
+                    <p>After your initial career goals have been accomplished, you'll want to reassess and set new goals for the next steps in your professional and personal journey.<br><br>Phase three will be about taking stock of what we've accomplished and how we want to cultivate healthy work-life balance that leads to sustainable emotional and physical health.</p>
+                </div>
+            </div>
+        </div>
+
+
+
+
+    </div>
+
+    <div class="w3-panel w3-center w3-margin">
+        <a class="w3-xlarge w3-hover-black" href="contact.html">Let's Talk</a>
+    </div>
+
+    <!-- Footer -->
+    <footer class="w3-black w3-padding" style="min-width: 100vw; height: 100px;">
+        <a class="w3-xlarge w3-hover-white" style="position:relative; top:33%" href="about.html">Kathleen Menegozzi</a>
+    </footer>
+
+    <script>
+        function w3_open() {
+            document.getElementById("mySidebar").style.display = "block";
+        }
+
+        function w3_close() {
+            document.getElementById("mySidebar").style.display = "none";
+        }
+    </script>
+
+</body>
+
+</html>

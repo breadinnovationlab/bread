@@ -1,0 +1,130 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <title>Bread Lab</title>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1">
+    <link rel="stylesheet" href="https://www.w3schools.com/w3css/4/w3.css">
+    <link rel="stylesheet" href="drum.css">
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+    <link href="https://fonts.googleapis.com/css2?family=Bebas+Neue&display=swap" rel="stylesheet">
+    <script src="https://kit.fontawesome.com/bffad89913.js" crossorigin="anonymous"></script>
+    <style>
+        body,
+        h1,
+        h2,
+        h3,
+        h5,
+        h6 {
+            font-family: "Bebas Neue", sans-serif;
+            font-weight: 400
+        }
+
+        h4 {
+            font-family: "Bebas Neue", sans-serif;
+            font-weight: 400;
+            font-size: 28px
+        }
+
+        p {
+            font-family: "Bebas Neue", sans-serif;
+            font-weight: 400;
+            font-size: 20px
+        }
+
+        .triangle-right {
+            width: 100px;
+            height: 100px;
+            border-top: 25px solid transparent;
+            border-left: 50px solid #555;
+            border-bottom: 25px solid transparent;
+            z-index: -1;
+        }
+    </style>
+</head>
+
+<body
+    style="min-height:100vh; background: linear-gradient(135deg, white 325px, #ffc107 325px, #ffc107 100%, white 100%)">
+    <!-- Navbar -->
+    <div class="w3-sidebar w3-bar-block w3-animate-right"
+        style="display:none; width:300px; right:0; top:0; font-size:2em;" id="mySidebar">
+        <button class="w3-bar-item w3-button w3-hover-black" onclick="w3_close()">&times;</button>
+        <a href="index.html#" class="w3-bar-item w3-button w3-hover-black">Home</a>
+        <a href="about.html" class="w3-bar-item w3-button w3-hover-black">About Me</a>
+        <a href="smb.html" class="w3-bar-item w3-button w3-hover-black">Small Business</a>
+        <a href="pp.html" class="w3-bar-item w3-button w3-hover-black">Personal Productivity</a>
+        <a href="immigrant.html" class="w3-bar-item w3-button w3-hover-black">Immigrant Support</a>
+        <a href="contact.html" class="w3-bar-item w3-button w3-hover-black">Let's Talk</a>
+    </div>
+
+    <div class="w3-right"><button class="w3-button w3-xxlarge w3-hover-black" onclick="w3_open()">☰</button></div>
+
+    <div style="position: relative; top: 3%; left: 3%; width: 50px; padding-top:20px;">
+        <h1 style="font-weight: bolder; font-size: 10em; line-height: 80%; width:50px">BREAD LAB</h1>
+    </div>
+
+    <h1 class="w3-margin w3-container w3-jumbo w3-center" style="padding-top:50px">Let's Talk</h1>
+
+    <div class="w3-center w3-row-padding w3-margin">
+
+        <div class="w3-half">
+            <div class="w3-container" style="text-align:left; margin-top:-30px">
+                <p class="w3-xxlarge">What are you working? What do you need help with? Where would a committed
+                    strategic partner make a difference? Email me, connect with me on linkedin, or use the form to send
+                    me a message. <br> Let's Talk!</p>
+                <h2>email: <a class="w3-hover-black" href="mailto:kmenegozzi@gmail.com">kmenegozzi@gmail.com</a></h2>
+                <h2>connect with me: <a class="w3-hover-black" href="https://www.linkedin.com/in/kathleen-menegozzi-70b4361b9/">linkedin</a></h2>
+            </div>
+        </div>
+
+        <div class="w3-half">
+            <div class="w3-container w3-card w3-white" style="text-align:left">
+                <form action="https://api.web3forms.com/submit" method="POST" class="w3-container">
+                    <!-- Replace with your Access Key -->
+                    <input type="hidden" name="access_key" value=8a0116da-314c-4a91-88cb-815a424f4d21>
+                    <!-- Form Inputs. Each input must have a name="" attribute -->
+                    <label class="w3-left w3-xlarge w3-margin-top" for="name">Name:</label>
+                    <input class="w3-input w3-border w3-xlarge" style="font-family:Courier; font-weight:bold;"
+                        type="text" name="name" placeholder="Your Name" required>
+
+                    <label class="w3-left w3-xlarge w3-margin-top" for="email">Email:</label>
+                    <input class="w3-input w3-border w3-xlarge" style="font-family:Courier; font-weight:bold;"
+                        type="email" name="email" placeholder="Your Email" required>
+
+                    <label class="w3-left w3-xlarge w3-margin-top" for="message">Message:</label>
+                    <textarea class="w3-input w3-border w3-xlarge"
+                        style="min-width: 100%; min-height:200px; font-family:Courier; font-weight:bold;" name="message"
+                        placeholder="How Can I Help?" required></textarea><br>
+
+                    <!-- Honeypot Spam Protection -->
+                    <input type="checkbox" name="botcheck" class="hidden" style="display: none;">
+                    <!-- Custom Confirmation / Success Page -->
+                    <!-- <input type="hidden" name="redirect" value="https://mywebsite.com/thanks.html"> -->
+                    <button class="w3-btn w3-black w3-hover-amber w3-xlarge" type="submit">Send Me a
+                        Message</button><br><br>
+                </form>
+            </div>
+        </div>
+
+    </div>
+
+    <!-- Footer -->
+    <footer class="w3-black w3-padding" style="min-width: 100vw; height: 100px;">
+        <a class="w3-xlarge w3-hover-white" style="position:relative; top:33%" href="about.html">Kathleen Menegozzi</a>
+    </footer>
+
+    <script>
+        function w3_open() {
+            document.getElementById("mySidebar").style.display = "block";
+        }
+
+        function w3_close() {
+            document.getElementById("mySidebar").style.display = "none";
+        }
+    </script>
+
+</body>
+
+</html>

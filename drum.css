@@ -1,0 +1,107 @@
+/* Drum container */
+.drum-container {
+    display: inline-block;
+    height: 52px;
+    overflow: hidden;
+    position: relative;
+    border-color: black;
+    border-bottom-style: solid;
+}
+
+/* Drum with the list of words */
+.drum {
+    display: flex;
+    flex-direction: column;
+    animation: roll 18s infinite;
+}
+
+/* Individual words */
+.word {
+    text-align: center;
+    line-height: 52px;
+    height: 52px;
+    width: 350px;
+}
+
+/* Animation to make the words scroll */
+@keyframes roll {
+    0% {
+        transform: translateY(0);
+    }
+
+    8.33% {
+        transform: translateY(-52px);
+        /* Moves up by one word's height */
+    }
+
+    16.66% {
+        transform: translateY(-104px);
+        /* Moves up by two word heights */
+    }
+
+    25% {
+        transform: translateY(-156px);
+        /* Moves up by three word heights */
+    }
+
+    33.33% {
+        transform: translateY(-208px);
+        /* Moves up by four word heights */
+    }
+
+    41.66% {
+        transform: translateY(-260px);
+        /* Moves up by five word heights */
+    }
+
+    50% {
+        transform: translateY(-312px);
+        /* Moves up by six word heights */
+    }
+
+    58.33% {
+        transform: translateY(-364px);
+        /* Moves up by seven word heights */
+    }
+
+    66.66% {
+        transform: translateY(-416px);
+        /* Moves up by eight word heights */
+    }
+
+    75% {
+        transform: translateY(-468px);
+        /* Moves up by nine word heights */
+    }
+
+    83.33% {
+        transform: translateY(-520px);
+        /* Moves up by ten word heights */
+    }
+
+    91.66% {
+        transform: translateY(-572px);
+        /* Moves up by eleven word heights */
+    }
+
+    100% {
+        transform: translateY(-624px);
+        /* Moves up by twelve word heights */
+    }
+}
+
+.hi-p {
+    background: #ffc107;
+    color: black;
+    display: inline;
+    line-height: 1.5;
+    padding: 1px;
+}
+
+.space-p {
+    background: #ffc107;
+    color: black;
+    display: inline;
+    line-height: 1.5;
+    padding: 1px;
+}
