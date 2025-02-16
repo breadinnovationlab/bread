@@ -1,0 +1,35 @@
+<html>
+
+<script src="https://esm.sh/css-doodle/css-doodle.min.js?raw"></script>
+
+<css-doodle grid="100x100" style="position:fixed; top:0; left:0; z-index:-1;">
+    :doodle {
+        width: 100%; height: 100%;
+        gap: 1px;
+        background: #ffc107;
+    }
+    :after {
+        content: @pick( url('icons/pp-1.png'), 
+                        url('icons/pp-2.png'),
+                        url('icons/pp-3.png'),
+                        url('icons/pp-4.png'),
+                        url('icons/pp-5.png'),
+                        );
+        transform: rotate(@rand(-45deg,45deg)) scale(1.20);
+        filter: invert(100%);
+        opacity: 50%;
+        margin: 0px;
+        padding: 0px;
+    }
+
+    @keyframes move {
+        0%{
+            transform: translateY(@rand(-5%,5%)) translateX(@rand(-5%,5%)) rotate(@rand(-10deg,10deg))
+        }
+        100%{
+            transform: translateY(@rand(-5%,5%)) translateX(@rand(-5%,5%)) rotate(@rand(-10deg,10deg))
+        }
+    }
+</css-doodle>
+
+</html>
