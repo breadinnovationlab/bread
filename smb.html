@@ -54,8 +54,13 @@
             gap: 1px;
         }
         :after {
-            content: @pick(url('1-s.png'),url('2-s.png'),url('3-s.png'),url('4-s.png'),url('5-s.png'));
-            transform: rotate(@rand(-45deg,45deg)) scale(0.9);
+            content: @pick( url('icons/smb-1.png'), 
+                            url('icons/smb-2.png'),
+                            url('icons/smb-3.png'),
+                            url('icons/smb-4.png'),
+                            url('icons/smb-5.png'),
+                            );
+            transform: rotate(@rand(-45deg,45deg)) scale(1.10);
             filter: invert(100%);
             opacity: 50%;
             margin: 0px;
